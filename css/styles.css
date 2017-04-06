@@ -6,7 +6,7 @@
 
 body {
     margin: 0 auto;
-    background: linear-gradient(rgba(74, 74, 74, .9), rgba(74, 74, 74, .9)), url("images/background.png");
+    background: linear-gradient(rgba(74, 74, 74, .9), rgba(74, 74, 74, .9)), url("../images/background.png");
     background-size: cover;
 }
 
@@ -121,9 +121,9 @@ legend {
 }
 
 fieldset input[type="text"] {
-    width: 70%;
+    width: 80%;
     height: 50px;
-    margin-left: 12%;
+    margin-left: 10%;
     margin-bottom: 10px;
     font-family: 'Muli', sans-serif;
     font-size: 19px;
@@ -138,10 +138,10 @@ fieldset input[type="text"]:focus {
 }
 
 main fieldset input[type="submit"] {
-    width: 70%;
+    width: 80%;
     height: 50px;
     margin-top: 10px;
-    margin-left: 12%;
+    margin-left: 10%;
     margin-bottom: 10px;
     border: 1px solid rgb(95, 1, 6);
     background-color: #b5070c;
@@ -152,9 +152,9 @@ main fieldset input[type="submit"] {
     font-weight: 900;
     color: #fff;
     padding-right: 70px;
-    background: url("images/doublearrows.png") 90% 50% no-repeat, -moz-linear-gradient( 90deg, rgb(151, 12, 12) 0%, rgb(218, 0, 12) 100%);
-    background: url("images/doublearrows.png") 90% 50% no-repeat, -webkit-linear-gradient( 90deg, rgb(151, 12, 12) 0%, rgb(218, 0, 12) 100%);
-    background: url("images/doublearrows.png") 90% 50% no-repeat, -ms-linear-gradient( 90deg, rgb(151, 12, 12) 0%, rgb(218, 0, 12) 100%);
+    background: url("../images/doublearrows.png") 90% 50% no-repeat, -moz-linear-gradient( 90deg, rgb(151, 12, 12) 0%, rgb(218, 0, 12) 100%);
+    background: url("../images/doublearrows.png") 90% 50% no-repeat, -webkit-linear-gradient( 90deg, rgb(151, 12, 12) 0%, rgb(218, 0, 12) 100%);
+    background: url("../images/doublearrows.png") 90% 50% no-repeat, -ms-linear-gradient( 90deg, rgb(151, 12, 12) 0%, rgb(218, 0, 12) 100%);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.004);
     cursor: pointer;
 }
@@ -170,7 +170,7 @@ main input[type="checkbox"] {
     height: 12px;
     border-radius: 3px;
     margin-bottom: 10px;
-    margin-left: 32px;
+    margin-left: 10%;
     cursor: pointer;
     position: relative;
 }
@@ -203,7 +203,6 @@ main input[type="checkbox"]:checked:after {
     margin-left: 10px;
 }
 
-
 /* progress bar and info */
 
 .progressInfo {
@@ -214,7 +213,14 @@ main input[type="checkbox"]:checked:after {
 .progressBar {
     width: 80%;
     height: 21px;
-    margin: 25px 30px 5px 30px;
+    margin: 25px 10% 5px 10%;
+}
+
+.progressStats {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .numberSigned, .numberGoal {
@@ -230,20 +236,6 @@ main input[type="checkbox"]:checked:after {
     font-weight: 700;
     color: #b5070c;
     text-transform: uppercase;
-}
-
-.progressNumbers {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.progressGoal {
-    margin-right: 30px;
-}
-
-.numberSigned {
-    margin-left: 15px;
 }
 
 .signedText {
@@ -480,7 +472,7 @@ footer .socials {
         width: auto;
         height: 518px;
         position: absolute;
-        margin-left: -6%;
+        margin-left: -8%;
     }
     aside {
         width: 50%;
@@ -512,9 +504,8 @@ footer .socials {
         height: 80px;
     }
     .progressBar {
-        width: 80%;
         height: 15px;
-        margin: 20px 15px 5px 25px;
+        margin-top: 18px;
     }
         .numberGoal {
             font-size: 20px;
@@ -548,15 +539,17 @@ footer .socials {
             height: 55px;
         }
     }
+
     @media (min-width: 872px) {
         main figure {
             overflow: hidden;
         }
         .firstLady {
-            height: 489px;
+            height: 510px;
             width: auto;
         }
     }
+
     @media (min-width: 1024px) {
         .brandLogo {
             width: 300px;
@@ -613,12 +606,13 @@ footer .socials {
             height: 111px;
         }
         .progressBar {
-            width: 85%;
             height: 21px;
-            margin: 33px 25px 5px 25px;
+            margin-top: 33px;
         }
-        .numberSigned {
-            margin-left: 15px;
+        .progressStats {
+          justify-content: center;
+          margin-left: 5%;
+          margin-right: 5%;
         }
         .numberSigned, .numberGoal {
             font-size: 27px;
@@ -654,13 +648,28 @@ footer .socials {
             width: 50%;
         }
     }
+
     @media (min-width: 1158px) {
         main figure {
-            height: 672px;
+            height: 699px;
         }
         .firstLady {
-            height: 750px;
             width: auto;
         }
     }
-}
+
+    @media (min-width: 1205px) {
+        main figure {
+            height: 688px;
+        }
+
+        .firstLady {
+          margin-left: 0%;
+        }
+    }
+
+    @media (min-width: 1237px) {
+      main figure {
+        height: 645px;
+      }
+    }
